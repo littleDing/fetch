@@ -1,3 +1,4 @@
+folk from https://github.com/andris9/fetch, simply add an extra option 'reqOption' for simplifying extra options when fetching, for example , the 'localAddress' option that can specific the outgoing ip.
 # fetch
 
 Fetch url contents. Supports gzipped content for quicker download, redirects (with automatic cookie handling, so no eternal redirect loops), streaming and piping etc.
@@ -76,7 +77,7 @@ Possible option values
  * **asyncDnsLoookup** use high performance asyncronous DNS resolution based on c-ares instead of a thread pool calling getaddrinfo(3)
  * **timeout** set a timeout in ms
  * **agent** pass-through http.request agent parameter
-
+ * **reqOption** options pass to http.request or https.request, with lower priority than the fetch options, could be rewrite or even ommit by other options
 
 ## Meta object
 
